@@ -3,21 +3,21 @@ import React, { useState } from "react";
 const initialFriends = [
   {
     id: 118836,
-    name: "Clark",
+    name: "Nitesh",
     image: "https://i.pravatar.cc/48?u=118836",
-    balance: -7,
+    balance: 100,
   },
   {
     id: 933372,
-    name: "Sarah",
+    name: "Shubham",
     image: "https://i.pravatar.cc/48?u=933372",
-    balance: 20,
+    balance: -20,
   },
   {
     id: 499476,
-    name: "Anthony",
+    name: "Harshit",
     image: "https://i.pravatar.cc/48?u=499476",
-    balance: 0,
+    balance: 1000,
   },
 ];
 
@@ -68,6 +68,7 @@ export default function App() {
         <SplitBill
           isSelectedFriend={isSelectedFriend}
           handleSplitBill={handleSplitBill}
+          key={initialFriends.id}
         />
       )}
     </div>
